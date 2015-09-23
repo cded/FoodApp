@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h4,p{
-	color: black;
+	color: white;
 }
 
 .top {
@@ -19,12 +19,12 @@ h1, h2, h4,p{
 	width: 20em;
 	/*border: 1px solid white;*/
 	margin: auto;
-	margin-bottom: 2em;
+	margin-bottom: 5em;
 }
 
 /* Initial menu */
 .menu {
-  background: transparent url("http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png"); repeat left top;
+  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
   left: -285px;  /* start off behind the scenes */
   position: fixed;
   height: 100%;
@@ -35,7 +35,7 @@ h1, h2, h4,p{
 /* Basic styling */
 
 .jumbotron {
-  background-image: url("http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png"); 
+  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png'); 
   height: 100%;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -119,7 +119,7 @@ h1, h2, h4,p{
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	border:1px solid white;
+	border:2px solid white;
 	display:inline-block;
 	cursor:pointer;
 	color:white;
@@ -144,7 +144,7 @@ h1, h2, h4,p{
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	border:1px solid white;
+	border:2px solid white;
 	color:white;
 	font-size:17px;
 	padding:8px 15px;
@@ -162,7 +162,6 @@ h1, h2, h4,p{
 
 
 .itemcounter{
-	border: 1px solid white;
 	margin-bottom: 2em;
 	height: 5em;
 	width: 10em;
@@ -172,8 +171,10 @@ h1, h2, h4,p{
 
 .increaseCount{
 	display: inline-block;
-	border: 1px solid white;
-	border-radius: 50%;
+  margin-left: 1em;
+  padding: 0em 1em 0em 1em;
+	border: 2px solid white;
+	border-radius: 100%;
 
 }
 .increaseCount:hover{
@@ -186,7 +187,9 @@ h1, h2, h4,p{
 
 .decreaseCount{
 	display: inline-block;
-	border: 1px solid white;
+  margin-right: 1em;
+  padding: 0em 1em 0em 1em;
+	border: 2px solid white;
 	border-radius: 100%;
 }
 .decreaseCount:hover{
@@ -195,6 +198,7 @@ h1, h2, h4,p{
 
 .itemcounter p{
 	font-size: 1em;
+  font-weight: bold;
 }
 
 
@@ -234,17 +238,21 @@ h1, h2, h4,p{
 
 /* 					Log In Page 				*/
 .container {
-  position: relative;
-  margin: 13em auto;
+  display: none;
+  position: fixed;
+  top:25%;
+  z-index: 1000;
+  margin: auto;
   width: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
 }
 
 .login {
   position: relative;
   margin: auto;
   padding: 20px 20px 20px;
-  width: 25em;
+  top:50%;
+  left: 40%;
   border-radius: 3px;
 
   &:before {

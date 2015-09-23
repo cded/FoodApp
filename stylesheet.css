@@ -1,5 +1,5 @@
 body {
-	background-image: url("file:///home/youssef/Documents/Code/Website/background.jpg");
+	background-image: url("file:///Users/abdeslammedouar/Documents/AppProject/Website/background.jpg");
 	background-size: cover;
 	font-family: Lucida Console;
 	left: 0;
@@ -385,5 +385,119 @@ input[type=submit] {
 .lt-ie9 {
   input[type=text], input[type=password] { line-height: 34px; }
 }
+
+
+
+
+/* Styling for Profile Page */
+
+.profileContainer{
+  position: relative;
+  width: 50em;
+  height: 30em;
+  margin: 5em auto;
+  line-height: 50%;
+  border: 1px solid white;
+  background: grey;
+}
+
+.profile h1{
+  border: 1px solid black;
+  text-align: center;
+  color: red;
+}
+
+.personalInfo{
+  border: 1px solid red;
+  margin: auto;
+  width: 48em;
+}
+
+.fullName{
+  border: 1px solid white;
+}
+
+.firstName{
+  border: 1px solid white;
+  display: block;
+  float: left;
+  width: 49%;
+}
+.firstName *{
+  border: 1px solid white;
+  clear:both;
+}
+form input[type="text"] {
+    border: none;
+    outline: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    height: 1.5em;
+}
+form input[type="password"]{
+  border: none;
+  outline: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+  height: 1.5em;
+}
+
+form *{
+  font-family: Lucida Console;
+}
+
+.lastName{
+  border: 1px solid white;
+  display: block;
+  float: right;
+  width: 49%;
+}
+
+.lastName label{
+  border: 1px solid white;
+  clear: both;
+}
+
+.address *{
+  display: inline-block;
+}
+
+.email input{
+  width: 100%;
+  border:1px solid white;
+  text-align: center;
+}
+.email label{
+  left: 2%;
+  position: relative;
+}
+
+.password input{
+  width: 100%;
+  text-align: center;
+}
+
+.password label{
+  position: relative;
+  left: 2%;
+}
+
+.phoneNumber input{
+  width: 100%;
+}
+
+.phoneNumber label{
+  position: relative;
+  left: 2%;
+}
+
+.aptNumber input{
+  width: 15%;
+}
+
+.civicNumber input{
+  width: 20%;
+}
+
 
 

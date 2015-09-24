@@ -177,7 +177,7 @@ h1, h2, h4,p{
   display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
-  border: 0.533em solid white;
+  border: 0.133em solid white;
   border-radius: 100%;
 
 }
@@ -189,7 +189,7 @@ h1, h2, h4,p{
   display: inline-block;
   margin-right: 1em;
   padding: 0em 1em 0em 1em;
-  border: 0.533em solid white;
+  border: 0.133em solid white;
   border-radius: 100%;
 }
 #decreaseCount1:hover{
@@ -202,7 +202,7 @@ h1, h2, h4,p{
   display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
-  border: 0.533em solid white;
+  border: 0.133em solid white;
   border-radius: 100%;
 
 }
@@ -216,7 +216,7 @@ h1, h2, h4,p{
   display: inline-block;
   margin-right: 1em;
   padding: 0em 1em 0em 1em;
-  border: 0.533em solid white;
+  border: 0.133em solid white;
   border-radius: 100%;
 }
 #decreaseCount2:hover{
@@ -230,7 +230,7 @@ h1, h2, h4,p{
   display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
-  border: 0.533em solid white;
+  border: 0.133em solid white;
   border-radius: 100%;
 
 }
@@ -244,7 +244,7 @@ h1, h2, h4,p{
   display: inline-block;
   margin-right: 1em;
   padding: 0em 1em 0em 1em;
-  border: 0.533em solid white;
+  border: 0.133em solid white;
   border-radius: 100%;
 }
 #decreaseCount3:hover{

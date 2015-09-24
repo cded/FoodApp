@@ -1,0 +1,562 @@
+body {
+  background-image: url("file:///home/youssef/Documents/Code/Website/background.jpg");
+  background-size: cover;
+  font-family: Lucida Console;
+  left: 0;
+    margin: 0;
+    overflow: scroll;
+    position: relative;
+}
+
+h1, h2, h4,p{
+  color: white;
+}
+
+.top {
+  text-align: center;
+  color:white;
+  height: 5em;
+  width: 20em;
+  /*border: 1px solid white;*/
+  margin: auto;
+  margin-bottom: 5em;
+}
+
+/* Initial menu */
+.menu {
+  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+  left: -19em;  /* start off behind the scenes */
+  position: fixed;
+  height: 100%;
+  width: 19em;
+  /*border: 1px solid white;*/
+}
+
+/* Basic styling */
+
+.jumbotron {
+  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png'); 
+  height: 100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.menu ul {
+  border-top: 0.067em solid #636366;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 0.067 solid #636366;
+  line-height: 3em;
+  padding-bottom: 0.2em;
+  padding-left: 1.33em;
+  padding-top: 0.2em;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 0.667em;
+  padding-top: 0.667em;
+  height:0.0667em;
+  width: 0.0667em;
+}
+
+.icon-menu {
+  color: #fff;
+  cursor: pointer;
+  font-family: Lucida Console;
+  font-size: 1.01em;
+  padding-bottom: 1.67em;
+  padding-left: 1.67em;
+  padding-top: 1.67em;
+  position: fixed;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-menu i {
+  margin-right: 0.33em;
+}
+.center {
+  width: 60em;
+  text-align: center;
+  /*border: 1px solid white;*/
+  margin: auto;
+  margin-bottom: 8em;
+}
+.menuitem{
+  /*border: 1px solid white;*/
+  margin-bottom: 2em;
+}
+.menuphoto {
+  width: 35em;
+  height: 20em;
+  /*border: 1px solid white;*/
+  margin:auto;
+  margin-bottom: 2em;
+}
+.menuphoto img {
+  width:100%;
+  height: 100%;
+  /*border: 1px solid white;*/
+  margin-bottom: 2em;
+
+}
+.learnmore p{
+  background-color:transparent;
+  -moz-border-radius:0.67em;
+  -webkit-border-radius:0.67em;
+  border-radius:0.67em;
+  border:0.133em solid white;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-size:1.02em;
+  padding:0.533em 1em;
+  text-decoration:none;
+  text-shadow:0em 0.067em 0em #5b6178;
+  border: 0.067em solid white;
+  margin-bottom: 2em;
+}
+.learnmore:hover {
+  background-color:transparent;
+}
+.learnmore:active {
+  position:relative;
+  top:0.067em;
+}
+
+.learnmore div{
+  display: none;
+  background-color:transparent;
+  -moz-border-radius:0.67em;
+  -webkit-border-radius:0.67em;
+  border-radius:0.67em;
+  border:0.133em solid white;
+  color:white;
+  font-size:1.02em;
+  padding:0.533em 1em;
+  text-decoration:none;
+  text-shadow:0em 0.067em 0em #5b6178;
+  margin-bottom: 2em;
+  height: 5em;
+  width: 20em;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2em;
+
+}
+
+
+
+.itemcounter{
+  margin-bottom: 2em;
+  height: 5em;
+  width: 10em;
+  margin: auto;
+  padding: 0;
+}
+
+.counter{
+  display: inline-block;
+}
+
+#increaseCount1{
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 0.533em solid white;
+  border-radius: 100%;
+
+}
+#increaseCount1:hover{
+  cursor: pointer;
+}
+
+#decreaseCount1{
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 0.533em solid white;
+  border-radius: 100%;
+}
+#decreaseCount1:hover{
+  cursor: pointer;
+}
+
+
+
+#increaseCount2{
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 0.533em solid white;
+  border-radius: 100%;
+
+}
+#increaseCount2:hover{
+  cursor: pointer;
+}
+
+
+
+#decreaseCount2{
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 0.533em solid white;
+  border-radius: 100%;
+}
+#decreaseCount2:hover{
+  cursor: pointer;
+}
+
+
+
+
+#increaseCount3{
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 0.533em solid white;
+  border-radius: 100%;
+
+}
+#increaseCount3:hover{
+  cursor: pointer;
+}
+
+
+
+#decreaseCount3{
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 0.533em solid white;
+  border-radius: 100%;
+}
+#decreaseCount3:hover{
+  cursor: pointer;
+}
+
+
+
+.itemcounter p{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+
+
+.bottom{
+  background-color:#44c767;
+  -moz-border-radius:1.87em;
+  -webkit-border-radius:1.87em;
+  border-radius:1.87em;
+  border:0.067em solid #18ab29;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:0.87em;
+  text-align: center;
+  text-decoration:none;
+  text-shadow:0em 0.067em 0em #2f6627;
+  /*border: 1px solid white;*/
+  width: 13.33em;
+  height: 4.7em;
+  position: fixed;
+  bottom: 2em;
+  right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bottom a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.33em;
+  line-height: 4.33em;
+}
+.bottom:hover {
+  background-color:#5cbf2a;
+}
+
+/*          Log In Page         */
+.container {
+  display: none;
+  position: fixed;
+  top:25%;
+  z-index: 1000;
+  margin: auto;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+
+.login {
+  position: relative;
+  margin: auto;
+  padding: 1.33em 1.33em 1.33em;
+  top:50%;
+  left: 40%;
+  border-radius: 0.2em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -0.533em; right: -0.533em; bottom: -0.533em; left: -0.533em;
+    z-index: -1;
+    background: rgba(black, .08);
+    border-radius: 0.27em;
+  }
+
+  h1 {
+    margin: -1.33em -1.33em 1.34em;
+    line-height: 2.7em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    text-shadow: 0 0.067em white;
+    background: #f3f3f3;
+    border-bottom: 0.067em solid #cfcfcf;
+    border-radius: 0.2em 0.2em 0 0;
+    @include linear-gradient(top, whiteffd, #eef2f5);
+    @include box-shadow(0 0.067em #f5f5f5);
+  }
+
+  p { margin: 1.33em 0 0; }
+  p:first-child { margin-top: 0; }
+
+  input[type=text], input[type=password] { width: 18.53em; }
+
+  p.remember_me {
+    float: left;
+    line-height: 2.01em;
+    display: inline-block;
+
+    label {
+      font-size: 0.8em;
+      color: #777;
+      cursor: pointer;
+    }
+
+    input {
+      position: relative;
+      bottom: 0.067em;
+      margin-right: 0.27em;
+      vertical-align: middle;
+    }
+  }
+
+  p.submit { 
+    text-align: right; 
+    display: inline-block;
+  }
+}
+
+.login-help {
+  margin: 1.33em 0;
+  font-size: 0.73em;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0.067em #2a85a1;
+
+  a {
+    color: #cce7fa;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+}
+
+:-moz-placeholder {
+  color: #c9c9c9 !important;
+  font-size: 0.87em;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 0.87em;
+}
+
+input {
+  font-size: 0.93em;
+}
+
+input[type=text], input[type=password] {
+  margin: 0.33em;
+  padding: 0 0.67;
+  width: 13.3em;
+  height: 2.267em;
+  color: #404040;
+  background: white;
+  border: 0.067em solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 0.133em;
+  outline: 0.33em solid #eff4f7;
+  -moz-outline-radius: 0.2em; // Can we get this on WebKit please?
+  @include box-shadow(inset 0 0.067em 0.2em rgba(black, .12));
+
+  &:focus {
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0; // WebKit sets this to -1 by default
+  }
+}
+
+input[type=submit] {
+  padding: 0 1.2em;
+  height: 1.93em;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #527881;
+  text-shadow: 0 0.067em #e3f1f1;
+  background: #cde5ef;
+  border: 0.067em solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 1.01em;
+  outline: 0;
+  @include box-sizing(content-box); // Firefox sets this to border-box by default
+  @include linear-gradient(top, #edf5f8, #cde5ef);
+  @include box-shadow(inset 0 0.067em white, 0 0.067em 0.133em rgba(black, .15));
+
+  &:active {
+    background: #cde5ef;
+    border-color: #9eb9c2 #b3c0c8 #b4ccce;
+    @include box-shadow(inset 0 0 0.2em rgba(black, .2));
+  }
+}
+
+.lt-ie9 {
+  input[type=text], input[type=password] { line-height: 2.267em; }
+}
+
+
+
+
+/* Styling for Profile Page */
+
+.profileContainer{
+  display:none;
+  position: relative;
+  width: 50em;
+  height: 30em;
+  margin: 5em auto;
+  line-height: 50%;
+  border: 0.067em solid white;
+  background: grey;
+}
+
+.profile h1{
+  border: 0.067em solid black;
+  text-align: center;
+  color: red;
+}
+
+.personalInfo{
+  border: 0.067em solid red;
+  margin: auto;
+  width: 48em;
+}
+
+.fullName{
+  border: 0.067em solid white;
+}
+
+.firstName{
+  border: 0.067em solid white;
+  display: block;
+  float: left;
+  width: 49%;
+}
+.firstName *{
+  border: 0.067em solid white;
+  clear:both;
+}
+form input[type="text"] {
+    border: none;
+    outline: 0;
+    padding: 0;
+    border-bottom: 0.067em solid black;
+    height: 1.5em;
+}
+form input[type="password"]{
+  border: none;
+  outline: 0;
+  padding: 0;
+  border-bottom: 0.067em solid black;
+  height: 1.5em;
+}
+
+form *{
+  font-family: Lucida Console;
+}
+
+.lastName{
+  border: 0.067em solid white;
+  display: block;
+  float: right;
+  width: 49%;
+}
+
+.lastName label{
+  border: 0.067em solid white;
+  clear: both;
+}
+
+.address *{
+  display: inline-block;
+}
+
+.email input{
+  width: 100%;
+  border:0.067em solid white;
+  text-align: center;
+}
+.email label{
+  left: 2%;
+  position: relative;
+}
+
+.password input{
+  width: 100%;
+  text-align: center;
+}
+
+.password label{
+  position: relative;
+  left: 2%;
+}
+
+.phoneNumber input{
+  width: 100%;
+}
+
+.phoneNumber label{
+  position: relative;
+  left: 2%;
+}
+
+.aptNumber input{
+  width: 15%;
+}
+
+.civicNumber input{
+  width: 20%;
+}
+
+
+

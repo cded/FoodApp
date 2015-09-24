@@ -450,6 +450,7 @@ input[type=submit] {
 /* Styling for Profile Page */
 
 .profileContainer{
+  display:none;
   position: relative;
   width: 50em;
   height: 30em;

@@ -6,7 +6,7 @@ counter();
 learnMore();
 orderNow();
 logIn();
-profile();
+profileCall();
 };
 
 function menuSlide() {

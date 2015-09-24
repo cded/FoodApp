@@ -1,5 +1,5 @@
 body {
-	background-image: url("file:///Users/abdeslammedouar/Documents/AppProject/Website/background.jpg");
+	background-image: url("file:///home/youssef/Documents/Code/Website/background.jpg");
 	background-size: cover;
 	font-family: Lucida Console;
 	left: 0;
@@ -169,7 +169,11 @@ h1, h2, h4,p{
 	padding: 0;
 }
 
-.increaseCount{
+.counter{
+  display: inline-block;
+}
+
+#increaseCount1{
 	display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
@@ -177,24 +181,77 @@ h1, h2, h4,p{
 	border-radius: 100%;
 
 }
-.increaseCount:hover{
+#increaseCount1:hover{
 	cursor: pointer;
 }
 
-.counter{
-	display: inline-block;
-}
-
-.decreaseCount{
+#decreaseCount1{
 	display: inline-block;
   margin-right: 1em;
   padding: 0em 1em 0em 1em;
 	border: 2px solid white;
 	border-radius: 100%;
 }
-.decreaseCount:hover{
+#decreaseCount1:hover{
 	cursor: pointer;
 }
+
+
+
+#increaseCount2{
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 2px solid white;
+  border-radius: 100%;
+
+}
+#increaseCount2:hover{
+  cursor: pointer;
+}
+
+
+
+#decreaseCount2{
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+#decreaseCount2:hover{
+  cursor: pointer;
+}
+
+
+
+
+#increaseCount3{
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 2px solid white;
+  border-radius: 100%;
+
+}
+#increaseCount3:hover{
+  cursor: pointer;
+}
+
+
+
+#decreaseCount3{
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0em 1em 0em 1em;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+#decreaseCount3:hover{
+  cursor: pointer;
+}
+
+
 
 .itemcounter p{
 	font-size: 1em;
@@ -246,6 +303,7 @@ h1, h2, h4,p{
   width: 100%;
   background: rgba(0,0,0,0.7);
 }
+
 
 .login {
   position: relative;

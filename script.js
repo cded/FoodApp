@@ -13,20 +13,20 @@ function menuSlide() {
   /* Push the body and the nav over by 285px over */
   $('.icon-menu').toggle(
     function() {
-      $('.menu').animate({left: "0px"}, 100);
-      $('body').animate({left: "285px"}, 100);
+      $('.menu').animate({left: "0"}, 100);
+      $('body').animate({left: "19em"}, 100);
       $('.bottom').hide();
     },
     function() {
-      $('.menu').animate({left: "-285px"}, 100);
-      $('body').animate({left: "0px"}, 100);
+      $('.menu').animate({left: "-19em"}, 100);
+      $('body').animate({left: "0"}, 100);
       $('.bottom').show();
     });
 
   /* Then push them back */
   $('body').click(function() {
-    $('.menu').animate({left: "-285px"}, 100);
-    $('body').animate({left: "0px"}, 100);
+    $('.menu').animate({left: "-19em"}, 100);
+    $('body').animate({left: "0"}, 100);
     $('.bottom').show();
   });
   $('.menu').click(function(event){

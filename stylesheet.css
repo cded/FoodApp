@@ -1,25 +1,28 @@
 body {
-	background-image: url("file:///home/youssef/Documents/Code/Website/background.jpg");
-	background-size: cover;
-	font-family: Lucida Console;
-	left: 0;
-  	margin: 0;
-  	overflow: scroll;
-  	position: relative;
+  background-image: url("file:///home/youssef/Documents/Code/Website/background.jpg");
+  background-size: cover;
+  font-family: Lucida Console;
+  left: 0;
+  margin: 0;
+  overflow: scroll;
+  position: relative;
+  height:100%;
+  width: 100%;
+
 }
 
 h1, h2, h4,p{
-	color: white;
+  color: white;
 }
 
 .top {
-	text-align: center;
-	color:white;
-	height: 5em;
-	width: 20em;
-	/*border: 1px solid white;*/
-	margin: auto;
-	margin-bottom: 5em;
+  text-align: center;
+  color:white;
+  height: 5em;
+  width: 20em;
+  /*border: 1px solid white;*/
+  margin: auto;
+  margin-bottom: 5em;
 }
 
 /* Initial menu */
@@ -90,83 +93,83 @@ h1, h2, h4,p{
   margin-right: 5px;
 }
 .center {
-	width: 60em;
-	text-align: center;
-	/*border: 1px solid white;*/
-	margin: auto;
-	margin-bottom: 8em;
+  width: 60em;
+  text-align: center;
+  /*border: 1px solid white;*/
+  margin: auto;
+  margin-bottom: 8em;
 }
 .menuitem{
-	/*border: 1px solid white;*/
-	margin-bottom: 2em;
+  /*border: 1px solid white;*/
+  margin-bottom: 2em;
 }
 .menuphoto {
-	width: 35em;
-	height: 20em;
-	/*border: 1px solid white;*/
-	margin:auto;
-	margin-bottom: 2em;
+  width: 35em;
+  height: 20em;
+  /*border: 1px solid white;*/
+  margin:auto;
+  margin-bottom: 2em;
 }
 .menuphoto img {
-	width:100%;
-	height: 100%;
-	/*border: 1px solid white;*/
-	margin-bottom: 2em;
+  width:100%;
+  height: 100%;
+  /*border: 1px solid white;*/
+  margin-bottom: 2em;
 
 }
 .learnmore p{
-	background-color:transparent;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
-	border:2px solid white;
-	display:inline-block;
-	cursor:pointer;
-	color:white;
-	font-size:17px;
-	padding:8px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #5b6178;
-	border: 1px solid white;
-	margin-bottom: 2em;
+  background-color:transparent;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:2px solid white;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-size:17px;
+  padding:8px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #5b6178;
+  border: 1px solid white;
+  margin-bottom: 2em;
 }
 .learnmore:hover {
-	background-color:transparent;
+  background-color:transparent;
 }
 .learnmore:active {
-	position:relative;
-	top:1px;
+  position:relative;
+  top:1px;
 }
 
 .learnmore div{
-	display: none;
-	background-color:transparent;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
-	border:2px solid white;
-	color:white;
-	font-size:17px;
-	padding:8px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #5b6178;
-	margin-bottom: 2em;
-	height: 5em;
-	width: 20em;
-	margin: auto;
-	text-align: center;
-	margin-bottom: 2em;
+  display: none;
+  background-color:transparent;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:2px solid white;
+  color:white;
+  font-size:17px;
+  padding:8px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #5b6178;
+  margin-bottom: 2em;
+  height: 5em;
+  width: 20em;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2em;
 
 }
 
 
 
 .itemcounter{
-	margin-bottom: 2em;
-	height: 5em;
-	width: 10em;
-	margin: auto;
-	padding: 0;
+  margin-bottom: 2em;
+  height: 5em;
+  width: 10em;
+  margin: auto;
+  padding: 0;
 }
 
 .counter{
@@ -174,26 +177,26 @@ h1, h2, h4,p{
 }
 
 #increaseCount1{
-	display: inline-block;
+  display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
-	border: 2px solid white;
-	border-radius: 100%;
+  border: 2px solid white;
+  border-radius: 100%;
 
 }
 #increaseCount1:hover{
-	cursor: pointer;
+  cursor: pointer;
 }
 
 #decreaseCount1{
-	display: inline-block;
+  display: inline-block;
   margin-right: 1em;
   padding: 0em 1em 0em 1em;
-	border: 2px solid white;
-	border-radius: 100%;
+  border: 2px solid white;
+  border-radius: 100%;
 }
 #decreaseCount1:hover{
-	cursor: pointer;
+  cursor: pointer;
 }
 
 
@@ -254,7 +257,7 @@ h1, h2, h4,p{
 
 
 .itemcounter p{
-	font-size: 1em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -262,38 +265,38 @@ h1, h2, h4,p{
 
 
 .bottom{
-	background-color:#44c767;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:13px;
-	text-align: center;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-	/*border: 1px solid white;*/
-	width: 200px;
-	height: 70px;
-	position: fixed;
-	bottom: 2em;
-	right: 0;
+  background-color:#44c767;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:1px solid #18ab29;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:13px;
+  text-align: center;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+  /*border: 1px solid white;*/
+  width: 200px;
+  height: 70px;
+  position: fixed;
+  bottom: 2em;
+  right: 0;
     left: 0;
     margin-right: auto;
     margin-left: auto;
 }
 .bottom a{
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
-	line-height: 65px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 65px;
 }
 .bottom:hover {
-	background-color:#5cbf2a;
+  background-color:#5cbf2a;
 }
 
-/* 					Log In Page 				*/
+/*          Log In Page         */
 .container {
   display: none;
   position: fixed;
@@ -362,8 +365,8 @@ h1, h2, h4,p{
   }
 
   p.submit { 
-  	text-align: right; 
-  	display: inline-block;
+    text-align: right; 
+    display: inline-block;
   }
 }
 
@@ -450,24 +453,26 @@ input[type=submit] {
 /* Styling for Profile Page */
 
 .profileContainer{
-  display:none;
-  position: relative;
-  width: 50em;
-  height: 30em;
-  margin: 5em auto;
-  line-height: 50%;
+  position: fixed;
+  top:25%;
+  z-index: 1000;
+  margin: auto;
+  width: 60%;
+  display: none;
   border: 1px solid white;
-  background: grey;
+  background: white;
+  right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .profile h1{
-  border: 1px solid black;
   text-align: center;
   color: red;
 }
 
 .personalInfo{
-  border: 1px solid red;
   margin: auto;
   width: 48em;
 }

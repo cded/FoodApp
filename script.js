@@ -31,17 +31,32 @@ function menuSlide() {
   });
   $('.menu').click(function(event){
       event.stopPropagation();
+      if($(event.target).is('#profile')){
+        $('.profileContainer').show();
+        $('.menu').animate({left: "-19em"}, 100);
+        $('body').animate({left: "0"}, 100);
+      };
+
+  $('body').click(function() {
+    $('.profileContainer').hide();
+    $('.bottom').show();
+  });
+  /*$('.profileContainer').click(function(event)){
+    event.stopPropagation();
+  };*/
+  stopProp('.profileContainer');
+
     });
 };
 
 /* Defining the counter*/
 function counter() {
-	var num;
-	/* When clicking +*/
+  var num;
+  /* When clicking +*/
   $("#increaseCount1").click(function(){
       /* Take the number value in the counter and increase it by 1*/
-    	num = parseInt($("#count1").text(),10) + 1;
-    	$("#count1").text(num);
+      num = parseInt($("#count1").text(),10) + 1;
+      $("#count1").text(num);
     });
     /*When clicking -*/
   $('#decreaseCount1').click(function(){
@@ -117,15 +132,15 @@ function orderNow(){
       event.stopPropagation();
     });
 };
+
 function profileCall(){
-    $("#profile").toggle(
-      function(){
+    $('.profiletested').click(function(){
         $('.profileContainer').show();
         alert("sa marche");
-      },
-      function(){
+      } 
+      /*function(){
         $('.profileContainer').hide();
-      }
+      }*/
     );
     $('body').click(function(){
       $('.profileContainer').hide();
@@ -134,4 +149,10 @@ function profileCall(){
       event.stopPropagation();
     });
     
+};
+
+function stopProp(a){
+  $(a).click(function(event){
+    event.stopPropagation();
+  });
 };

@@ -2,8 +2,9 @@
 <html>
 <head>
 	<title>Zeste</title>
-	
 	<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
 	<!-- Importing jQuery from internet -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<!-- Importing jQuery UI from internet-->
@@ -17,22 +18,17 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">-->
 </head>
-<body background="img/back.png">
-	<!-- Logo Division -->
+<body background="img/back.png" style="width:100%">
 	<div class="top">
 		<h1>Logo</h1>
 	</div>
 
+	<div class="menuCalled">
+	<div class="menuContainer">
+		<div class="icon-close">
+		</div>	
 
-	<div class="menu">
-      
-      <!-- Menu icon -->
-      <div class="icon-close">
-        <img src="http://www.clker.com/cliparts/Q/A/W/c/p/q/small-red-x-mark-md.png">
-      </div>
-
-      <!-- Menu -->
-      <ul>
+		<ul>
       	<li id="todayMenu"><p>Today's Menu</p></li>
         <li id="share"><p>Share with Friends</p></li>
         <li><p id="profile">Profile</p></li>
@@ -41,16 +37,12 @@
         <li id="about"><p>About</p></li>
         <li id="support"><p>Support</p></li>
       </ul>
-    </div>
-
-    <!-- Icon for Home -->
-    <div class="jumbotron">
-
-      <div class="icon-menu">
-        <i class="fa fa-bars"></i>
-        Home
-      </div>
-
+	</div>
+	<div class="menuOutside"></div>
+	</div>
+	<div class="homeIcon">
+		<p>Home</p>
+	</div>
 
     <!-- Each Menu Item is defined here -->  
 	<div class="center">

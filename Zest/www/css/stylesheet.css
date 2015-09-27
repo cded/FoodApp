@@ -1,10 +1,6 @@
-@viewport {
-   max-width: device-width;
-}
-
 body {
   background-size: cover;
-  font-family: Lucida Console;
+  font-family: "Open Sans",sans-serif Console;
   left: 0;
   margin: 0;
   overflow: scroll;
@@ -13,9 +9,7 @@ body {
   width: 100%;
 
 }
-body *{
-  border:1px solid white;
-}
+
 h1, h2, h4,p{
   color: white;
 }
@@ -23,56 +17,55 @@ h1, h2, h4,p{
 .top {
   text-align: center;
   color:white;
-  height: 10em;
-  width: 100%;
+  height: 5em;
+  width: 20em;
   /*border: 1px solid white;*/
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0;
+  margin: auto;
+  margin-bottom: 5em;
 }
-
+.menuCalled {
+  display:none;
+  position:absolute;
+  z-index: 1000;
+  height:100%;
+  width:100%;
+  /*border:1px solid red;*/
+}
+.menuContainer {
+  position: absolute;
+  display:none;
+  z-index: 1000;
+  width:65%;
+  height:100%;
+  /*border: 1px solid white;*/
+  background-color: #FFFFFF;
+  /*border-radius: 10px;*/
+}
 /* Initial menu */
-.menu {
-  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
-  left: -285px;  /* start off behind the scenes */
-  position: fixed;
-  height: 100%;
-  width: 285px;
-  /*border: 1px solid white;*/
+.menuOutside{
+  background-color: #111111;
+  z-index: 800;
+  /*border: 2px solid green;*/
+  opacity: 50%;
+  height:100%;
+  width:100%;
 }
-
-/* Basic styling */
-
-.jumbotron {
-  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png'); 
-  height: 100%;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-}
-
-.menu ul {
-  text-align: center;
-  border-top: 1px solid #636366;
+.menuContainer ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.menu li {
-  border-bottom: 1px solid #636366;
+.menuContainer li {
   line-height: 45px;
   padding-bottom: 3px;
   padding-left: 20px;
   padding-top: 3px;
 }
 
-.menu a {
-  color: #fff;
-  font-size: 15px;
+.menuContainer p {
+  color: black;
+  font-size: 100%;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -88,7 +81,7 @@ h1, h2, h4,p{
 .icon-menu {
   color: #fff;
   cursor: pointer;
-  font-family: Lucida Console;
+  font-family: "Open Sans",sans-serif Console;
   font-size: 16px;
   padding-bottom: 25px;
   padding-left: 25px;
@@ -102,7 +95,7 @@ h1, h2, h4,p{
   margin-right: 5px;
 }
 .center {
-  width: 100%;
+  width: 60em;
   text-align: center;
   /*border: 1px solid white;*/
   margin: auto;
@@ -113,14 +106,13 @@ h1, h2, h4,p{
   margin-bottom: 2em;
 }
 .menuphoto {
-  width: 100%;
+  width: 35em;
   height: 20em;
   /*border: 1px solid white;*/
   margin:auto;
   margin-bottom: 2em;
 }
 .menuphoto img {
-  width:100%;
   height: 100%;
   /*border: 1px solid white;*/
   margin-bottom: 2em;
@@ -357,7 +349,7 @@ h1, h2, h4,p{
   p.remember_me {
     float: left;
     line-height: 31px;
-    display: inline-block;
+    display: block;
 
     label {
       font-size: 12px;
@@ -467,9 +459,9 @@ input[type=submit] {
   z-index: 1000;
   margin: auto;
   width: 60%;
-  /*display: none;*/
+  display: none;
   border: 1px solid white;
-  background: grey;
+  background: white;
   right: 0;
     left: 0;
     margin-right: auto;
@@ -487,30 +479,19 @@ input[type=submit] {
 }
 
 .fullName{
-  border: 1px solid red;
-  width: 80%;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
+  border: 1px solid white;
 }
 
 .firstName{
   border: 1px solid white;
-  display: inline-block;
-  width: 45%;
+  display: block;
+  float: left;
+  width: 49%;
 }
 .firstName *{
   border: 1px solid white;
-  display: block;
+  clear:both;
 }
-
-.lastName{
-  border: 1px solid white;
-  display: inline-block;
-  width: 45%;
-}
-
 form input[type="text"] {
     border: none;
     outline: 0;
@@ -527,29 +508,52 @@ form input[type="password"]{
 }
 
 form *{
-  font-family: Lucida Console;
+  font-family: "Open Sans",sans-serif Console;
 }
 
+.lastName{
+  border: 1px solid white;
+  display: block;
+  float: right;
+  width: 49%;
+}
 
+.lastName label{
+  border: 1px solid white;
+  clear: both;
+}
 
 .address *{
   display: inline-block;
 }
 
 .email input{
-  width: 60%;
+  width: 100%;
   border:1px solid white;
   text-align: center;
 }
+.email label{
+  left: 2%;
+  position: relative;
+}
 
 .password input{
-  width: 60%;
+  width: 100%;
   text-align: center;
 }
 
+.password label{
+  position: relative;
+  left: 2%;
+}
 
 .phoneNumber input{
-  width: 40%;
+  width: 100%;
+}
+
+.phoneNumber label{
+  position: relative;
+  left: 2%;
 }
 
 .aptNumber input{
@@ -559,13 +563,6 @@ form *{
 .civicNumber input{
   width: 20%;
 }
-
-.profile label{
-  display: block;
-  left: 10%;
-}
-
-
 
 
 

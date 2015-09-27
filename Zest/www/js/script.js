@@ -11,30 +11,39 @@ profileCall();
 
 function menuSlide() {
   /* Push the body and the nav over by 285px over */
-  $('.icon-menu').toggle(
+  $('.homeIcon').toggle(
     function() {
-      $('.menu').animate({left: "0"}, 100);
-      $('body').animate({left: "19em"}, 100);
+      $(".menuCalled").show();
+      $(".menuContainer").show();
       $('.bottom').hide();
+      $(".top").hide();
+      $(".homeIcon").hide();
+      $("body").fade();
+
     },
     function() {
-      $('.menu').animate({left: "-19em"}, 100);
-      $('body').animate({left: "0"}, 100);
-      $('.bottom').show();
+      $(".menuCalled").hide();
+      $(".menuContainer").show();
+      $(".homeIcon").show();
+      
     });
 
   /* Then push them back */
-  $('body').click(function() {
-    $('.menu').animate({left: "-19em"}, 100);
-    $('body').animate({left: "0"}, 100);
+  $('.menuOutside').click(function() {
+    $(".menuCalled").hide();
+    $(".menuContainer").show();
     $('.bottom').show();
+    $(".top").show();
+    $(".homeIcon").show();
   });
-  $('.menu').click(function(event){
+  $('.menuContainer').click(function(event){
       event.stopPropagation();
       if($(event.target).is('#profile')){
         $('.profileContainer').show();
-        $('.menu').animate({left: "-19em"}, 100);
-        $('body').animate({left: "0"}, 100);
+        $(".menuCalled").hide();
+        $(".menuContainer").show();
+        $(".homeIcon").show();
+        $(".top").show();
       };
 
   $('body').click(function() {
@@ -48,6 +57,7 @@ function menuSlide() {
 
     });
 };
+
 
 /* Defining the counter*/
 function counter() {

@@ -111,6 +111,7 @@ h1, h2, h4,p{
 }
 .menuitem{
   /*border: 1px solid white;*/
+  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 .menuphoto {
@@ -298,6 +299,7 @@ h1, h2, h4,p{
   left: 0;
   margin-right: auto;
   margin-left: auto;
+  margin:auto;
 }
 .bottom p{
   margin-top: -0.05em;

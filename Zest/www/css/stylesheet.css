@@ -9,15 +9,14 @@ body {
   width: 100%;
 
 }
-
+/*body *{
+  border: 1px solid white;
+}*/
 h1, h2, h4,p{
   color: white;
 }
 
-/*body *{
-  border: 1px solid white;
-}*/
-
+/*Logo*/
 .top {
   text-align: center;
   color:white;
@@ -26,6 +25,9 @@ h1, h2, h4,p{
   /*border: 1px solid white;*/
   margin: auto;
 }
+
+/*Menu*/
+
 .menuCalled {
   display:none;
   position:absolute;
@@ -97,6 +99,8 @@ h1, h2, h4,p{
 .icon-menu i {
   margin-right: 5px;
 }
+/*Centre*/
+  
 .center {
   width: 80%;
   text-align: center;
@@ -106,17 +110,17 @@ h1, h2, h4,p{
 }
 .menuitem{
   /*border: 1px solid white;*/
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 .menuphoto {
   width: 100%;
-  height: 20em;
+  height: 17em;
   /*border: 1px solid white;*/
   margin:auto;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 .menuphoto img {
-  height: 70%;
+  height: 90%;
   /*border: 1px solid white;*/
   margin-bottom: 2em;
 
@@ -125,12 +129,12 @@ h1, h2, h4,p{
   background-color:transparent;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
-  border-radius:10px;
+  border-radius:5px;
   border:2px solid white;
   display:inline-block;
   cursor:pointer;
   color:white;
-  font-size:17px;
+  font-size:1em;
   padding:8px 15px;
   text-decoration:none;
   text-shadow:0px 1px 0px #5b6178;
@@ -169,8 +173,8 @@ h1, h2, h4,p{
 
 
 .itemcounter{
-  margin-bottom: 2em;
-  height: 5em;
+  margin-bottom: 0.5em;
+  height: 3.5em;
   width: 10em;
   margin: auto;
   padding: 0;
@@ -188,7 +192,7 @@ h1, h2, h4,p{
   display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   border-radius: 100%;
 
 }
@@ -200,7 +204,7 @@ h1, h2, h4,p{
   display: inline-block;
   margin-right: 1em;
   padding: 0em 1em 0em 1em;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   border-radius: 100%;
 }
 #decreaseCount1:hover{
@@ -275,31 +279,31 @@ h1, h2, h4,p{
 
 .bottom{
   background-color:#44c767;
-  -moz-border-radius:28px;
-  -webkit-border-radius:28px;
-  border-radius:28px;
-  border:1px solid #18ab29;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  /*border:1px solid red;*/
   cursor:pointer;
   color:#ffffff;
-  font-size:13px;
   text-align: center;
   text-decoration:none;
   text-shadow:0px 1px 0px #2f6627;
   /*border: 1px solid white;*/
-  width: 200px;
-  height: 70px;
+  width: 15em;
+  height: 3em;
   position: fixed;
-  bottom: 2em;
+  bottom: 3em;
   right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
-.bottom a{
+.bottom p{
+  margin-top: -0.05em;
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  line-height: 65px;
+  font-size: 1.5em;
+  line-height: 2em;
 }
 .bottom:hover {
   background-color:#5cbf2a;

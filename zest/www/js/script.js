@@ -45,6 +45,12 @@ function menuSlide() {
         $(".menuContainer").show();
         $(".homeIcon").show();
       };
+       if($(event.target).is('#todayMenu')){
+        $('.menuCalled').hide();
+        $('.bottom').show();
+        $('.top').show();
+        $(".homeIcon").show();
+      };
 
   $('.closeProfile').click(function(){
     $('.profileContainer').hide();
@@ -144,13 +150,16 @@ function orderNow(){
     $('.bottom').toggle(
       function(){
         $('.container').show();
+        $(".bottom").hide();
       },
       function(){
         $('.container').hide();
+        $(".bottom").show();
       }
     );
     $('body').click(function(){
       $('.container').hide();
+      $(".bottom").show();
     });
     $('.container').click(function(event){
       event.stopPropagation();

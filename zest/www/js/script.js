@@ -1,4 +1,7 @@
 $(document).ready(main);
+/*$(document).ready(function() {
+    $('#pagepiling').pagepiling();
+});*/
 function main() {
 
 menuSlide();
@@ -164,3 +167,7 @@ function stopProp(a){
     event.stopPropagation();
   });
 };
+/*$('#pagepiling').pagepiling({
+    anchors: ['#page1', '#page2', '#page3'],
+    menu: '#myMenu'
+});*/

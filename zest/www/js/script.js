@@ -124,6 +124,11 @@ function orderNow(){
       $('.container').hide();
       $('.profileContainer').show();
     });
+      $('.closeProfile').click(function(){
+    $('.profileContainer').hide();
+    $('.bottom').show();
+    $('.top').show();
+  });
 };
 
 function stopProp(a){

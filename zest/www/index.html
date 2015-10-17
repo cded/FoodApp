@@ -2,50 +2,15 @@
 <html>
 <head>
   <title>Zeste</title>
-  <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="css/stylesheet.scss">
   <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
   <!-- Importing jQuery from internet -->
   <script src="js/jquery.min.js"></script>
   <!-- Importing jQuery UI from internet-->
   <script src="js/jquery-ui.js"></script>
-  <!-- Importing JS file on CPU-->
-  <script type="text/javascript">
-    // TOUCH-EVENTS SINGLE-FINGER SWIPE-SENSING JAVASCRIPT
-    // Courtesy of PADILICIOUS.COM and MACOSXAUTOMATION.COM
-  
-    var fingerCount = 0;
-    var startX = 0;
-  function processingRoutine() {
-    var swipedElement = document.getElementById(triggerElementID);
-    if ( swipeDirection == 'left' ) {
-      $(".menuCalled").hide("slide",{ direction: "left" }, 400);
-      $(".menuContainer").hide();
-      $('.orderNow').show();
-      $(".top").show();
-      $(".homeIcon").show();
-      } 
-    else if ( swipeDirection == 'right' ) {
-      $(".menuCalled").show("slide",{ direction: "left" }, 400);
-      $(".menuContainer").show("slide",{ direction: "left" }, 400);
-      $('.orderNow').hide();
-      $(".top").hide();
-      $(".homeIcon").hide();
-      $('body').fade();
-  } 
-    else if ( swipeDirection == 'up' ) {
-
-  }
-    else if ( swipeDirection == 'down' ) {
-
-  }
-}
-
-    
-    
-  </script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/jquery.swipeUpDown.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     <meta name="format-detection" content="telephone=no">
@@ -56,9 +21,7 @@
 
 
 </head>
-<body background="img/back.png" style="background-size:contain" >
-
-<div id="swipeBox" ontouchstart="touchStart(event,'swipeBox');" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);">
+<body background="img/back.jpg" style="background-size:contain" >
 
 <!--              Defining Pop Up for Profile Page          -->
   <section class="profileContainer">
@@ -146,7 +109,7 @@
   </div>
   </section>
   <div class="homeIcon">
-    <p>Home</p>
+    <a href="#menu" class="box-shadow-menu"></a>
   </div>
 
 
@@ -263,22 +226,19 @@
     </div>
   </section>
 
+    <div class="top">
+    <img src="img/logo1.png"/>
+  </div>
 
 <!--              Defining Main Central Elements         -->
 <div>
-  <div id="page1" class="section">
+  <div id="page1" class="section1">
 
-  <div class="top">
-    <h1>Logo</h1>
-  </div>
     <!-- Each Menu Item is defined here -->  
   <div class="center">
     <div class="menuitem">
       <h2>Menu item #1</h2>
       <p>10$</p>
-    </div>
-    <div class="menuphoto">
-      <img src="img/meal.png" />
     </div>
     <div class="learnMore">
       <div id="learnMore1">
@@ -286,26 +246,20 @@
       </div>
     </div>
     <div id="itemcounter1">
-      <div class="decreaseCount">-</div>
+      <div class="decreaseCount"><p class="sign">-</p></div>
       <div class="counter">
         <p class="count">0</p>
       </div>
 
-      <div class="increaseCount">+</div>
+      <div class="increaseCount"><p class="sign">+</p></div>
     </div>
   </div>
   </div>
   <div id="page2" class="section">
-  <div class="top">
-    <h1>Logo</h1>
-  </div>
   <div class="center">
     <div class="menuitem">
       <h2>Menu item #2</h2>
       <p>10$</p>
-    </div>
-    <div class="menuphoto">
-      <img src="img/meal.png" />
     </div>
     <div class="learnMore">
       <div id="learnMore2">
@@ -313,25 +267,19 @@
       </div>
     </div>
     <div id="itemcounter2">
-      <div class="decreaseCount">-</div>
+      <div class="decreaseCount"><p class="sign">-</p></div>
       <div class="counter">
         <p class="count">0</p>
       </div>
-      <div class="increaseCount">+</div>
+      <div class="increaseCount"><p class="sign">+</p></div>
     </div>
   </div>
   </div>
   <div id="page3" class="section">
-  <div class="top">
-    <h1>Logo</h1>
-  </div>
   <div class="center">
     <div class="menuitem">
       <h2>Menu item #3</h2>
       <p>10$</p>
-    </div>
-    <div class="menuphoto">
-      <img src="img/meal.png"/>
     </div>
     <div class="learnMore">
       <div id="learnMore3">
@@ -339,11 +287,11 @@
       </div>
     </div>
     <div id="itemcounter3">
-      <div class="decreaseCount">-</div>
+      <div class="decreaseCount"><p class="sign">-</p></div>
       <div class="counter">
         <p class="count">0</p>
       </div>
-      <div class="increaseCount">+</div>
+      <div class="increaseCount"><p class="sign">+</p></div>
     </div>
   </div>
   </div>
@@ -356,7 +304,6 @@
     <p> Order Now </p>
   </div>
 
-</div>
 </body>
 
 </html>
